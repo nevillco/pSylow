@@ -16,4 +16,7 @@
 @property NSMutableArray* factors;
 @property NSMutableArray* exponents;
 
+- (BOOL) isPrime;
+- (NSMutableAttributedString*) factorizationAsString;
+
 @end

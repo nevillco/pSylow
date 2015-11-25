@@ -22,8 +22,11 @@
 #pragma mark PSResultsViewController
 
 - (void) updateLabels {
-    self.groupSizeLabel.text = [NSString stringWithFormat:@"%d", self.groupSize.number];
-    
+    self.groupSizeLabel.attributedText = [self.groupSize factorizationAsString];
+}
+
+- (IBAction)returnButtonPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

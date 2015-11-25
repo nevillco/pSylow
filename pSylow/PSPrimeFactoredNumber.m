@@ -7,6 +7,7 @@
 //
 
 #import "PSPrimeFactoredNumber.h"
+#import <CoreText/CTStringAttributes.h>
 
 @implementation PSPrimeFactoredNumber
 
@@ -48,6 +49,39 @@
         [self.factors addObject:[NSNumber numberWithInt: factor]];
         [self.exponents addObject:[NSNumber numberWithInt: 1]];
     }
+}
+
+//Can check for a prime if its prime factorization is itself
+- (BOOL) isPrime {
+    return [self.exponents isEqual: @[@1].mutableCopy];
+}
+
+//Returns a string representation of the factorization
+//including superscripts for exponents
+- (NSMutableAttributedString*) factorizationAsString {
+    //Initial string
+    NSMutableAttributedString *attrString =
+    [[NSMutableAttributedString alloc] initWithString:
+     [NSString stringWithFormat:@"%d=%d%d", self.number,
+      [self.factors[0] intValue], [self.exponents[0] intValue]]];
+    //Superscript last index
+    int lastIndex = (int)attrString.length - 1;
+    [attrString addAttribute:(id)kCTSuperscriptAttributeName
+                       value:(id)@1 range:NSMakeRange(lastIndex, 1)];
+    //Loop through additional factor/exponent pairs
+    for(int i = 1; i < self.factors.count; i++) {
+        NSMutableAttributedString* concat =
+        [[NSMutableAttributedString alloc] initWithString:
+         [NSString stringWithFormat:@"*%d%d",
+          [self.factors[i] intValue], [self.exponents[i] intValue]]];
+        
+        int lastIndex = (int)concat.length - 1;
+        [concat addAttribute:(id)kCTSuperscriptAttributeName
+                           value:(id)@1 range:NSMakeRange(lastIndex, 1)];
+        [attrString appendAttributedString:concat];
+        
+    }
+    return attrString;
 }
 
 @end

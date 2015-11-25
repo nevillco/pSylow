@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="go"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8B-8S-q1z">
-                                <rect key="frame" x="274" y="217" width="53" height="76"/>
+                                <rect key="frame" x="274" y="247" width="53" height="76"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
                                 <state key="normal" title="Go!">
                                     <color key="titleColor" red="0.27058823529999998" green="0.79607843140000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,12 +52,21 @@
                                     <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14B-p7-x3H"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="between 2 and 1,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQN-hp-ObK">
+                                <rect key="frame" x="233" y="207" width="135" height="26"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V8B-8S-q1z" secondAttribute="bottom" constant="14" id="7IL-oT-fJV"/>
                             <constraint firstItem="p0c-O2-m8U" firstAttribute="top" secondItem="nUn-mz-g2i" secondAttribute="bottom" constant="14" id="8jo-xT-ELc"/>
+                            <constraint firstItem="ZQN-hp-ObK" firstAttribute="top" secondItem="p0c-O2-m8U" secondAttribute="bottom" constant="4" id="OtE-WI-n5I"/>
                             <constraint firstItem="V8B-8S-q1z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sm7-19-hfl"/>
+                            <constraint firstItem="ZQN-hp-ObK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UxR-hv-bq1"/>
+                            <constraint firstItem="V8B-8S-q1z" firstAttribute="top" secondItem="ZQN-hp-ObK" secondAttribute="bottom" constant="14" id="c0x-SK-bxJ"/>
                             <constraint firstItem="V8B-8S-q1z" firstAttribute="top" secondItem="p0c-O2-m8U" secondAttribute="bottom" constant="14" id="cxs-pX-hTU"/>
                             <constraint firstItem="nUn-mz-g2i" firstAttribute="top" secondItem="qv9-eO-hm1" secondAttribute="bottom" constant="14" id="cye-Bv-2d3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nUn-mz-g2i" secondAttribute="trailing" id="eTv-PR-YNS"/>
@@ -68,6 +77,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="cxs-pX-hTU"/>
                                 <exclude reference="7IL-oT-fJV"/>
                             </mask>
                         </variation>
@@ -104,13 +114,31 @@
                                 <color key="textColor" red="0.27058823529999998" green="0.79607843140000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="T7m-5y-thP">
+                                <rect key="frame" x="20" y="149" width="560" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29X-fV-U4U">
+                                <rect key="frame" x="248" y="511" width="105" height="76"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <state key="normal" title="Return">
+                                    <color key="titleColor" red="0.27058823529999998" green="0.79607843140000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnButtonPressed:" destination="ght-lg-CJb" eventType="touchUpInside" id="nYS-4k-RSf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="T7m-5y-thP" firstAttribute="top" secondItem="hQc-d2-3MF" secondAttribute="bottom" constant="20" id="HSM-gh-YPG"/>
                             <constraint firstItem="x2j-7W-UfZ" firstAttribute="top" secondItem="wAq-MH-ZwF" secondAttribute="bottom" constant="10" id="JkU-p2-dKg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T7m-5y-thP" secondAttribute="trailing" id="KiB-KA-Jws"/>
+                            <constraint firstItem="jY2-Rh-bwF" firstAttribute="top" secondItem="29X-fV-U4U" secondAttribute="bottom" constant="13" id="M1u-OA-q7M"/>
                             <constraint firstAttribute="leadingMargin" secondItem="x2j-7W-UfZ" secondAttribute="leading" id="Vns-zg-aIV"/>
+                            <constraint firstItem="T7m-5y-thP" firstAttribute="leading" secondItem="WMk-Lz-1mG" secondAttribute="leadingMargin" id="WEr-LF-S9H"/>
                             <constraint firstItem="hQc-d2-3MF" firstAttribute="centerX" secondItem="WMk-Lz-1mG" secondAttribute="centerX" id="WZB-io-mEK"/>
                             <constraint firstItem="hQc-d2-3MF" firstAttribute="top" secondItem="x2j-7W-UfZ" secondAttribute="bottom" constant="14" id="hhZ-mD-OVr"/>
+                            <constraint firstItem="29X-fV-U4U" firstAttribute="centerX" secondItem="WMk-Lz-1mG" secondAttribute="centerX" id="mOt-Vl-A9n"/>
                         </constraints>
                     </view>
                     <connections>
