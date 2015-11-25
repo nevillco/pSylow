@@ -7,6 +7,7 @@
 //
 
 #import "PSHomeViewController.h"
+#import "PSResultsViewController.h"
 
 @interface PSHomeViewController ()
 
@@ -41,7 +42,27 @@
 - (IBAction)goButtonPressed:(id)sender {
     //0 if field text
     int groupSize = [self.sizeField.text intValue];
+    if(groupSize < 2) {
+        [self alertInvalidInput];
+        return;
+    }
     //segue to results
+    [self performSegueWithIdentifier:@"ShowResultsSegue" sender:self];
+}
+
+//Pass groupSize to results controller
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PSResultsViewController* destination = (PSResultsViewController*)[segue destinationViewController];
+    destination.groupSize = [self.sizeField.text intValue];
+}
+
+//On invalid input, present alert controller
+- (void) alertInvalidInput {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Invalid" message:@"Please enter an integer group size that is at least 2." preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* action = [UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction: action];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end

@@ -14,7 +14,7 @@
 		2D6A5BD41C0622A30026EBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A5BD31C0622A30026EBBA /* Assets.xcassets */; };
 		2D6A5BD71C0622A30026EBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A5BD51C0622A30026EBBA /* LaunchScreen.storyboard */; };
 		2D6A5BE01C0633800026EBBA /* Objective-C.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A5BDE1C0633800026EBBA /* Objective-C.gitignore */; };
-		2D6A5BE11C0633800026EBBA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A5BDF1C0633800026EBBA /* README.md */; };
+		2D6A5BE41C06374F0026EBBA /* PSResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A5BE31C06374F0026EBBA /* PSResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,8 @@
 		2D6A5BD81C0622A30026EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D6A5BDE1C0633800026EBBA /* Objective-C.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objective-C.gitignore"; sourceTree = SOURCE_ROOT; };
 		2D6A5BDF1C0633800026EBBA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		2D6A5BE21C06374F0026EBBA /* PSResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSResultsViewController.h; sourceTree = "<group>"; };
+		2D6A5BE31C06374F0026EBBA /* PSResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 				2D6A5BCB1C0622A30026EBBA /* PSAppDelegate.m */,
 				2D6A5BCD1C0622A30026EBBA /* PSHomeViewController.h */,
 				2D6A5BCE1C0622A30026EBBA /* PSHomeViewController.m */,
+				2D6A5BE21C06374F0026EBBA /* PSResultsViewController.h */,
+				2D6A5BE31C06374F0026EBBA /* PSResultsViewController.m */,
 				2D6A5BD01C0622A30026EBBA /* Main.storyboard */,
 				2D6A5BD31C0622A30026EBBA /* Assets.xcassets */,
 				2D6A5BD51C0622A30026EBBA /* LaunchScreen.storyboard */,
@@ -156,9 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6A5BE41C06374F0026EBBA /* PSResultsViewController.m in Sources */,
 				2D6A5BCF1C0622A30026EBBA /* PSHomeViewController.m in Sources */,
 				2D6A5BCC1C0622A30026EBBA /* PSAppDelegate.m in Sources */,
-				2D6A5BE11C0633800026EBBA /* README.md in Sources */,
 				2D6A5BC91C0622A30026EBBA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
