@@ -1,18 +1,18 @@
 //
-//  AppDelegate.m
+//  PSAppDelegate.m
 //  pSylow
 //
 //  Created by Connor Neville on 11/25/15.
 //  Copyright © 2015 connorneville. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "PSAppDelegate.h"
 
-@interface AppDelegate ()
+@interface PSAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation PSAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  PSHomeViewController.h
 //  pSylow
 //
 //  Created by Connor Neville on 11/25/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface PSHomeViewController : UIViewController
 
 
 @end

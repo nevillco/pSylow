@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  PSAppDelegate.h
 //  pSylow
 //
 //  Created by Connor Neville on 11/25/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface PSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

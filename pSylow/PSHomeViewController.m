@@ -1,20 +1,20 @@
 //
-//  HomeViewController.m
+//  PSHomeViewController.m
 //  pSylow
 //
 //  Created by Connor Neville on 11/25/15.
 //  Copyright © 2015 connorneville. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "PSHomeViewController.h"
 
-@interface HomeViewController ()
+@interface PSHomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *sizeField;
 
 @end
 
-@implementation HomeViewController
+@implementation PSHomeViewController
 
 #pragma mark UIViewController
 
@@ -29,7 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark HomeViewController
+#pragma mark PSHomeViewController
 
 //Appearance tweaks not easily made in IB
 - (void) fixAppearance {
