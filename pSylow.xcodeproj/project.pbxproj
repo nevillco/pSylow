@@ -17,6 +17,8 @@
 		2D6A5BE41C06374F0026EBBA /* PSResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A5BE31C06374F0026EBBA /* PSResultsViewController.m */; };
 		2D6A5BE71C063CB20026EBBA /* PSPrimeFactoredNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A5BE61C063CB20026EBBA /* PSPrimeFactoredNumber.m */; };
 		2D6A5BF11C063F7D0026EBBA /* pSylowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A5BF01C063F7D0026EBBA /* pSylowTests.m */; };
+		2D6A5BFB1C0657360026EBBA /* PSSubgroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A5BFA1C0657360026EBBA /* PSSubgroupController.m */; };
+		2D6A5BFE1C06595D0026EBBA /* PSSylowSubgroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A5BFD1C06595D0026EBBA /* PSSylowSubgroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		2D6A5BEE1C063F7D0026EBBA /* pSylowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pSylowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6A5BF01C063F7D0026EBBA /* pSylowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pSylowTests.m; sourceTree = "<group>"; };
 		2D6A5BF21C063F7D0026EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6A5BF91C0657360026EBBA /* PSSubgroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSubgroupController.h; sourceTree = "<group>"; };
+		2D6A5BFA1C0657360026EBBA /* PSSubgroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSubgroupController.m; sourceTree = "<group>"; };
+		2D6A5BFC1C06595D0026EBBA /* PSSylowSubgroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSylowSubgroup.h; sourceTree = "<group>"; };
+		2D6A5BFD1C06595D0026EBBA /* PSSylowSubgroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSylowSubgroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 				2D6A5BCE1C0622A30026EBBA /* PSHomeViewController.m */,
 				2D6A5BE21C06374F0026EBBA /* PSResultsViewController.h */,
 				2D6A5BE31C06374F0026EBBA /* PSResultsViewController.m */,
+				2D6A5BF91C0657360026EBBA /* PSSubgroupController.h */,
+				2D6A5BFA1C0657360026EBBA /* PSSubgroupController.m */,
+				2D6A5BFC1C06595D0026EBBA /* PSSylowSubgroup.h */,
+				2D6A5BFD1C06595D0026EBBA /* PSSylowSubgroup.m */,
 				2D6A5BD01C0622A30026EBBA /* Main.storyboard */,
 				2D6A5BE51C063CB20026EBBA /* PSPrimeFactoredNumber.h */,
 				2D6A5BE61C063CB20026EBBA /* PSPrimeFactoredNumber.m */,
@@ -228,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D6A5BE41C06374F0026EBBA /* PSResultsViewController.m in Sources */,
+				2D6A5BFB1C0657360026EBBA /* PSSubgroupController.m in Sources */,
 				2D6A5BE71C063CB20026EBBA /* PSPrimeFactoredNumber.m in Sources */,
+				2D6A5BFE1C06595D0026EBBA /* PSSylowSubgroup.m in Sources */,
 				2D6A5BCF1C0622A30026EBBA /* PSHomeViewController.m in Sources */,
 				2D6A5BCC1C0622A30026EBBA /* PSAppDelegate.m in Sources */,
 				2D6A5BC91C0622A30026EBBA /* main.m in Sources */,
