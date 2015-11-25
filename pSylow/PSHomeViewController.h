@@ -10,6 +10,7 @@
 
 @interface PSHomeViewController : UIViewController
 
+- (void) clearSizeField;
 
 @end
 

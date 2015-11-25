@@ -56,6 +56,7 @@
 {
     PSResultsViewController* destination = (PSResultsViewController*)[segue destinationViewController];
     destination.groupSize = [[PSPrimeFactoredNumber alloc] initWithNumber:[self.sizeField.text intValue]];
+    [self clearSizeField];
 }
 
 //On invalid input, present alert controller
@@ -64,6 +65,10 @@
     UIAlertAction* action = [UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleDefault handler:nil];
     [alert addAction: action];
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void) clearSizeField {
+    self.sizeField.text = @"";
 }
 
 @end

@@ -6,6 +6,7 @@
 //  Copyright © 2015 connorneville. All rights reserved.
 //
 
+#import "PSHomeViewController.h"
 #import "PSResultsViewController.h"
 #import "PSPrimeFactoredNumber.h"
 
@@ -26,6 +27,8 @@
 }
 
 - (IBAction)returnButtonPressed:(id)sender {
+    PSHomeViewController* presenter = (PSHomeViewController*)[self presentingViewController];
+    [presenter clearSizeField];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
