@@ -8,6 +8,7 @@
 
 #import "PSHomeViewController.h"
 #import "PSResultsViewController.h"
+#import "PSPrimeFactoredNumber.h"
 
 @interface PSHomeViewController ()
 
@@ -54,7 +55,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     PSResultsViewController* destination = (PSResultsViewController*)[segue destinationViewController];
-    destination.groupSize = [self.sizeField.text intValue];
+    destination.groupSize = [[PSPrimeFactoredNumber alloc] initWithNumber:[self.sizeField.text intValue]];
 }
 
 //On invalid input, present alert controller

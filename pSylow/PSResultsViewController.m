@@ -7,6 +7,7 @@
 //
 
 #import "PSResultsViewController.h"
+#import "PSPrimeFactoredNumber.h"
 
 @implementation PSResultsViewController
 
@@ -21,7 +22,7 @@
 #pragma mark PSResultsViewController
 
 - (void) updateLabels {
-    self.groupSizeLabel.text = [NSString stringWithFormat:@"%d", self.groupSize];
+    self.groupSizeLabel.text = [NSString stringWithFormat:@"%d", self.groupSize.number];
     
 }
 

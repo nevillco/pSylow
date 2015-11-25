@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class PSPrimeFactoredNumber;
 
 @interface PSResultsViewController : UIViewController
 
-@property int groupSize;
+@property PSPrimeFactoredNumber* groupSize;
 @property (weak, nonatomic) IBOutlet UILabel *groupSizeLabel;
 
 @end
